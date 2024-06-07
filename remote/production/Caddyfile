@@ -1,0 +1,13 @@
+{
+    email jean-francois.simonnet@efrei.net
+}
+
+http://192.168.56.14 { 
+    respond /debug/* "Not Permitted" 403
+    reverse_proxy localhost:4000
+}
+
+# thebestdeal.icu {
+#     respond /debug/* "Not Permitted" 403 
+#     reverse_proxy localhost:4000
+# }
